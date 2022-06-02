@@ -127,14 +127,15 @@ body {
 }
 /*------------------------------main-------------------------------------*/
 .hero { 
+    max-width: 1600px;
     background-color: var(--footer-color);
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;  
-    background-image: url(..//images/фон_героя.jpg);
+    background-image: linear-gradient( to right,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(../images/фон_героя.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    
+    background-size: cover;
 }
 
 .hero-title {
@@ -177,6 +178,33 @@ body {
 }
 .features-list {
     display: flex;
+}
+.features-list-item::before {
+    margin-bottom: 30px;
+    display: block;
+    content: '';
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+.icon-antenna::before {
+    background-image: url(../images/antenna.svg);
+}
+.icon-clock::before {
+    background-image: url(../images/clock.svg);
+}
+.icon-diagram::before {
+    background-image: url(../images/diagram.svg);
+}
+.icon-astronaut::before {
+    background-image: url(../images/astronaut.svg);
+}
+.icon-antenna::before, 
+.icon-clock::before, 
+.icon-diagram::before, 
+.icon-astronaut::before {
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .features-list-item:not(:first-child) {
     margin-left: 30px;
