@@ -131,11 +131,13 @@ body {
     background-color: var(--footer-color);
     padding-top: 200px;
     padding-bottom: 200px;
+    margin: 0 auto;
     text-align: center;  
     background-image: linear-gradient( to right,rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(../images/фон_героя.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
 }
 
 .hero-title {
@@ -179,32 +181,20 @@ body {
 .features-list {
     display: flex;
 }
-.features-list-item::before {
-    margin-bottom: 30px;
-    display: block;
-    content: '';
+.features-icons {
     height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
     background: #F5F4FA;
     border-radius: 4px;
 }
-.icon-antenna::before {
-    background-image: url(../images/antenna.svg);
-}
-.icon-clock::before {
-    background-image: url(../images/clock.svg);
-}
-.icon-diagram::before {
-    background-image: url(../images/diagram.svg);
-}
-.icon-astronaut::before {
-    background-image: url(../images/astronaut.svg);
-}
-.icon-antenna::before, 
-.icon-clock::before, 
-.icon-diagram::before, 
-.icon-astronaut::before {
-    background-repeat: no-repeat;
-    background-position: center;
+.features-icon-use {
+   display: block;
+   margin-right: 10px;
+   fill: currentColor;
+    
 }
 .features-list-item:not(:first-child) {
     margin-left: 30px;
@@ -277,6 +267,13 @@ body {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
+}
+.team-links {
+    display: flex;
+}
+.team-links-icon {
+   width: 20px;
+   height: 20px; 
 }
 
 /*------------------------------footer-------------------------------------*/
