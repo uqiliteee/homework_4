@@ -315,6 +315,9 @@ body {
 .team-links-icon:hover {
     fill: var(--main-color)
 }
+.team-link-item:not(:last-child) {
+    margin-right: 10px;
+}
 /*---------------------------------clients----------------------------------------------*/
 .clients {
     padding-top: 94px;
@@ -359,6 +362,7 @@ body {
 }
 .footer-div{
     display: flex;
+    align-items: baseline;
 }
 .footer-logo {
     display: inline-block;
@@ -372,6 +376,9 @@ body {
 }
 .footer-logo-accent {
     color: var(--accent-color);
+}
+.footer-list {
+    margin-right: 70px;
 }
 .footer-adress {
     display: inline-block;
@@ -410,11 +417,37 @@ body {
 .footer-phone-link:focus {
     color: var(--accent-color);
 }
-.footer--links-title {
-    
+.footer-links-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--main-color);
 }
 .footer-links-list{
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.footer-link-item:not(:last-child) {
+    margin-right: 10px;
+}
+.soc-links-footer {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+.soc-links-footer:hover,
+.soc-links-footer:focus {
+    background-color: var(--accent-color);
+}
+.footer-svg {
+    fill:var(--main-color)
 }
 /*------------------------------portfolio-------------------------------------*/
 .portfolio-section {
