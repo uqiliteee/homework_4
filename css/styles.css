@@ -108,6 +108,11 @@ body {
 .contacts-nav {
     display: flex;
     margin-left: auto;
+    align-items: center;
+    padding: 0;
+}
+.contacts-item {
+    display: flex;
 }
 .contact-item:not(:last-child) {
     margin-right: 50px;
@@ -124,6 +129,20 @@ body {
 .contacts-nav-item:hover,
 .contacts-nav-item:focus {
     color: var(--accent-color);
+}
+.contact-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+.contact-icon:hover,
+.contact-icon:focus{
+    fill:currentColor
 }
 /*------------------------------main-------------------------------------*/
 .hero { 
@@ -270,12 +289,13 @@ body {
 }
 .team-links {
     display: flex;
+    align-items: center;
+    justify-content: center;   
 }
-.team-links-icon {
-   width: 20px;
-   height: 20px; 
-}
-
+.team-links-icons {
+    width: 20px;
+    height: 20px;
+} 
 /*------------------------------footer-------------------------------------*/
 .page-footer {
     padding-top: 60px;
