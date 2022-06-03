@@ -202,9 +202,8 @@ body {
 }
 .features-icons {
     height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    padding: 25px 100px;
     margin-bottom: 30px;
     background: #F5F4FA;
     border-radius: 4px;
