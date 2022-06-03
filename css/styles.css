@@ -114,7 +114,7 @@ body {
     display: flex;
 }
 .contact-item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 30px;
 }
 .contacts-nav-item {
     padding-top: 30px;
@@ -299,7 +299,6 @@ body {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: tomato;
 }
 .team-soc-link:not(:last-child){
     margin-right: 10px;
@@ -308,13 +307,14 @@ body {
 .team-soc-link:focus {
     background-color: var(--accent-color);
 }
-.team-links-icons {
-    fill: currentColor
-} 
-.team-links-icon:focus,
-.team-links-icon:hover {
-    fill: currentColor 
+.team-soc-link:focus .team-links-icon,
+.team-soc-link:hover .team-links-icon {
+    fill: rgba(255, 255, 255, 1)
 }
+.team-links-icons {
+    fill: var(--icons-color)
+} 
+
 .team-link-item:not(:last-child) {
     margin-right: 10px;
 }
