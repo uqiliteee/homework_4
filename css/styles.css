@@ -352,8 +352,8 @@ body {
     border-radius: 4px;
 }
 
-.clients-svg:hover,
-.clients-svg:focus{
+.clients-link:hover,
+.clients-link:focus{
     fill:var(--accent-color)
 }
 .clients-svg {
