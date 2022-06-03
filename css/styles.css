@@ -291,6 +291,13 @@ body {
     align-items: center;
     justify-content: center;   
 }
+.team-link-item {
+    width: 44px;
+    height: 44px;
+}
+.team-link-item:not(:last-child) {
+    margin-right: 10px;
+}
 .team-soc-link {
     display: block;
     display: flex;
@@ -300,6 +307,9 @@ body {
     height: 44px;
     border-radius: 50%;
 }
+.team-links-icons {
+    fill: var(--icons-color)
+}
 .team-soc-link:not(:last-child){
     margin-right: 10px;
 }
@@ -307,17 +317,11 @@ body {
 .team-soc-link:focus {
     background-color: var(--accent-color);
 }
-.team-soc-link:focus .team-links-icon,
-.team-soc-link:hover .team-links-icon {
+.team-soc-link:focus .team-links-icons,
+.team-soc-link:hover .team-links-icons {
     fill: rgba(255, 255, 255, 1)
 }
-.team-links-icons {
-    fill: var(--icons-color)
-} 
 
-.team-link-item:not(:last-child) {
-    margin-right: 10px;
-}
 /*---------------------------------clients----------------------------------------------*/
 .clients {
     padding-top: 94px;
@@ -336,23 +340,26 @@ body {
 }
 .clients-list-item {
     display: block;
-    width: 170px;
-    padding: 16px 32px;
 }
 .clients-list-item:not(:last-child){
     margin-right: 30px;
 }
 .clients-link {
-    width: 100%;
-    height: 100%;
-    
+    display: block;
+    width: 170px;
+    padding: 16px 32px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.clients-svg:hover,
+.clients-svg:focus{
+    fill:var(--accent-color)
 }
 .clients-svg {
     fill: var(--icons-color)
 }
-.clients-icon {
-    
-}
+
 
 /*------------------------------footer-------------------------------------*/
 .page-footer {
@@ -422,6 +429,7 @@ body {
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
+    font-size: inherit;
     color: var(--main-color);
 }
 .footer-links-list{

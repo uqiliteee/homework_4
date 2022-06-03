@@ -26,7 +26,7 @@
     <symbol id="icon-linkedin" viewBox="0 0 32 32">
       <path  d="M32 32V20.32c0-5.76-1.28-10.24-8-10.24-3.2 0-5.28 1.76-6.24 3.52v-3.04H11.2V32h6.56V21.44c0-2.88.48-5.44 4-5.44 3.36 0 3.52 3.2 3.52 5.6V32H32zM.48 10.56H7.2V32H.48V10.56zM3.84 0C1.76 0 0 1.6 0 3.84c0 2.08 1.6 3.84 3.84 3.84a3.84 3.84 0 1 0 0-7.68z"/>
     </symbol>
-    <symbol id="icon-facebook" viewBox="0 0 32 32">
+    <symbol id="icon-facebook" viewBox="0 0 32 32" >
       <path  d="M21.28 5.28h3.04V.16L20 0c-4.16 0-7.04 2.72-7.04 7.52V12H8v5.76h4.8V32h5.6V17.6h4.48l.8-5.6H18.4V8.16c0-1.6.48-2.88 2.72-2.88z"/>
     </symbol>
     <symbol id="icon-instagram" viewBox="0 0 32 32">
