@@ -292,6 +292,10 @@ body {
     justify-content: center;   
 }
 .team-soc-link {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -304,14 +308,13 @@ body {
 .team-soc-link:focus {
     background-color: var(--accent-color);
 }
-.team-soc-link {
-    
-}
 .team-links-icons {
-    width: 20px;
-    height: 20px;
     fill: var(--icons-color)
 } 
+.team-links-icon:focus,
+.team-links-icon:hover {
+    fill: #000;
+}
 /*---------------------------------clients----------------------------------------------*/
 .clients {
     padding-top: 94px;
