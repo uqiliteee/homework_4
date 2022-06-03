@@ -16,6 +16,7 @@
     --accent-color: #2196F3;
     --links-color: rgba(255, 255, 255, 0.6);
     --footer-color: #2F303A;
+    --icons-color: rgba(175, 177, 184, 1)
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -60,8 +61,6 @@ body {
 
 /*------------------------------header-------------------------------------*/
 .page-header {
-    padding-top: 24px;
-    padding-bottom: 24px;
     border-bottom: 1px solid #ECECEC;
 }
 .page-header .container {
@@ -120,6 +119,9 @@ body {
 .contacts-nav-item {
     padding-top: 30px;
     padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--secondary-text-color);
     font-weight: 500;
     line-height: 1.14;
@@ -139,10 +141,7 @@ body {
     width: 16px;
     height: 16px;
     margin-right: 10px;
-}
-.contact-icon:hover,
-.contact-icon:focus{
-    fill:currentColor
+    fill: currentColor;
 }
 /*------------------------------main-------------------------------------*/
 .hero { 
@@ -281,6 +280,7 @@ body {
     text-align: center;
 }
 .team-list-subtitle {
+    margin-bottom: 16px;
     color: var(--secondary-text-color);
     font-size: 16px;
     line-height: 1.18;
@@ -291,10 +291,63 @@ body {
     align-items: center;
     justify-content: center;   
 }
+.team-soc-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: tomato;
+}
+.team-soc-link:not(:last-child){
+    margin-right: 10px;
+}
+.team-soc-link:hover,
+.team-soc-link:focus {
+    background-color: var(--accent-color);
+}
+.team-soc-link {
+    
+}
 .team-links-icons {
     width: 20px;
     height: 20px;
+    fill: var(--icons-color)
 } 
+/*---------------------------------clients----------------------------------------------*/
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.clients-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+.clients-list {
+    display: flex;
+    justify-content: center;
+}
+.clients-list-item {
+    display: block;
+    width: 170px;
+    padding: 16px 32px;
+}
+.clients-list-item:not(:last-child){
+    margin-right: 30px;
+}
+.clients-link {
+    width: 100%;
+    height: 100%;
+    
+}
+.clients-svg {
+    fill: var(--icons-color)
+}
+.clients-icon {
+    
+}
+
 /*------------------------------footer-------------------------------------*/
 .page-footer {
     padding-top: 60px;
