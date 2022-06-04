@@ -357,10 +357,11 @@ body {
 
 .clients-link:hover,
 .clients-link:focus{
-    fill:var(--accent-color)
+    color:var(--accent-color);
+    border-color: var(--accent-color);
 }
 .clients-svg {
-    fill: currentColor
+    fill: currentColor;
 }
 
 
