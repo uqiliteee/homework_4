@@ -110,8 +110,10 @@ body {
     align-items: center;
     padding: 0;
 }
-.contacts-item {
+.contact-item {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .contact-item:not(:last-child) {
     margin-right: 30px;
@@ -132,11 +134,6 @@ body {
 .contacts-nav-item:focus {
     color: var(--accent-color);
 }
-.contact-item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .contact-icon {
     width: 16px;
     height: 16px;
@@ -146,6 +143,7 @@ body {
 /*------------------------------main-------------------------------------*/
 .hero { 
     max-width: 1600px;
+    height: 600px;
     background-color: var(--footer-color);
     padding-top: 200px;
     padding-bottom: 200px;
@@ -209,7 +207,6 @@ body {
 }
 .features-icon-use {
    display: block;
-   margin-right: 10px;
    fill: currentColor;
     
 }
@@ -339,13 +336,19 @@ body {
     justify-content: center;
 }
 .clients-list-item {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .clients-list-item:not(:last-child){
     margin-right: 30px;
 }
 .clients-link {
     display: block;
+    color: var(--icons-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 170px;
     padding: 16px 32px;
     border: 1px solid #AFB1B8;
@@ -357,7 +360,7 @@ body {
     fill:var(--accent-color)
 }
 .clients-svg {
-    fill: var(--icons-color)
+    fill: currentColor
 }
 
 
