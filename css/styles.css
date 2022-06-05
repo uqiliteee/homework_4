@@ -335,22 +335,16 @@ body {
     display: flex;
     justify-content: center;
 }
-.clients-list-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .clients-list-item:not(:last-child){
     margin-right: 30px;
 }
 .clients-link {
-    display: block;
+    height: 92px;
     color: var(--icons-color);
     display: flex;
     justify-content: center;
     align-items: center;
     width: 170px;
-    padding: 16px 32px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
